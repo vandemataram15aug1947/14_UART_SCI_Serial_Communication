@@ -1,6 +1,4 @@
-/*
- Maaz khan
- Reg : 19jzele0320
+
                            Task-14
  *********************************************************************
  UART (SCI) Serial Communication Interface   between two devices
@@ -31,7 +29,7 @@ void main(void)
     UART_GPIO_init();
     SCI_A_init();
 
-    ////////////////////////////////  MAAZ KHAN  /////////////////////////////////////////////
+    //////////////////////////////// Vande  /////////////////////////////////////////////
 
     char message[8] = {'1', '2', '3', '4', '5', '6', '\n', '\r'};
     while(1)
@@ -53,7 +51,7 @@ void main(void)
 
 void UART_GPIO_init(){
 
-    ////////////////////////////////  MAAZ KHAN  /////////////////////////////////////////////
+    //////////////////////////////// Vande  /////////////////////////////////////////////
 
     // for serial terminal use GPIO42 and 43
     EALLOW;
@@ -97,7 +95,7 @@ void SCI_A_init(){
     //  CpuSysRegs.PCLKCR7.bit.SCI_B = 1;  // Enable peripheral clock for SCI module B (SCIB)
     EDIS;
 
-    ///////////////////////////////////////   MAAZ KHAN ///////////////////////////////////////////
+    ///////////////////////////////////////  Vande ///////////////////////////////////////////
 
     // Set SWRESET bit to 1
     SciaRegs.SCICTL1.bit.SWRESET = 1;
